@@ -1,0 +1,718 @@
+﻿@model CookWeb_Ver2.Models.ManualViewModel
+
+<label style="font-weight:bold; color:olivedrab; font-size:xx-large; align-content:center">Machine: @Model.MachineName</label>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<style>
+    .button-clicked {
+        background-color: red;
+    }
+    .btnYellow{
+        background-color: orange;
+    }
+
+    .btnGreen {
+        background-color: forestgreen;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h4 style="margin:10px,0px">Calib bếp</h4>
+            <button id="btnCalib" class="btn btn-primary" style="background-color:green; color:white">Calib</button>
+
+            <h4 style="margin:10px,0px">Bơm xịt rửa</h4>
+            <button id="btnSprayWater" class="btn btn-primary">Xịt rửa</button>
+
+            <h4 style="margin:10px,0px">Vị trí khay nguyên liệu</h4>
+            <button id="btnVitri1" class="btn btn-primary">Vị trí 1</button>
+            <button id="btnVitri2" class="btn btn-primary">Vị trí 2</button>
+            <button id="btnVitri3" class="btn btn-primary">Vị trí 3</button>
+            <button id="btnVitri4" class="btn btn-primary">Vị trí 4</button>
+            
+           
+            
+
+            <h4 style="margin:10px,0px">Băng tải thành phẩm</h4>
+            <button id="btnGoiTPGN" class="btn btn-primary">Gọi Khay GN</button>
+            <button id="btnGoiTPGiay" class="btn btn-primary">Gọi Khay giấy</button>
+            <button id="btnTraTP" class="btn btn-primary">Trả</button>
+
+            <h4 style="margin:10px,0px">Đèn báo</h4>
+            <button id="btnLedYellow" class="btn btn-primary">Vàng</button>
+            <button id="btnLedGreen" class="btn btn-primary">Xanh</button>
+            <button id="btnLedRed" class="btn btn-primary">Đỏ + còi</button>
+
+            @* <h4 style="margin:10px,0px">Thay đổi góc nghiêng bếp</h4>
+            <button id="btnTurnUp" class="btn btn-primary">Ngửa nồi lên</button>
+            <button id="btnTurnDown" class="btn btn-primary">Úp nồi xuống</button>
+
+
+            <h4 style="margin:10px,0px">Hộp cấp nguyên liệu</h4>
+            <button id="btnBoxSupply" class="btn btn-primary">Bật</button>
+            <h4 style="margin:10px,0px">XyLanh kéo khay NL</h4>
+            <button id="btnXylahNL" class="btn btn-primary">Kéo ra</button>
+
+            <h4 style="margin:10px,0px">Di chuyển vị trí đổ khay</h4>
+            <button id="btnTurnTrayLeft" class="btn btn-primary">Trái</button>
+            <button id="btnTurnTrayRight" class="btn btn-primary">Phải</button>
+            <h4 style="margin:10px,0px">Đổ NL xong lắc</h4>
+            <button id="btnNod" class="btn btn-primary">Bật</button>
+
+            <h4 style="margin:10px,0px">Đèn báo</h4>
+            <button id="btnLedYellow" class="btn btn-primary">Vàng</button>
+            <button id="btnLedGreen" class="btn btn-primary">Xanh</button>
+            <button id="btnLedRed" class="btn btn-primary">Đỏ + còi</button>
+
+            <h4 style="margin:10px,0px">Bơm xịt rửa</h4>
+            <button id="btnSprayWater" class="btn btn-primary">Nước</button>
+            <button id="btnSprayHC" class="btn btn-primary">Hóa chất</button>
+            <button id="btnAir" class="btn btn-primary">Khí</button> *@
+        </div>
+        <div class="col-md-4">
+            <h4 style="margin:10px,0px">Bơm thực phẩm</h4>
+            <input type="number" id="capa" placeholder="Capacity" style="margin:0px,10px; width:100px" />
+            <button id="btnPumpOil" class="btn btn-primary" value="pumpOil">Dầu</button>
+            <button id="btnPumpWater" class="btn btn-primary" value="pumpWater">Nước</button>
+            <button id="btnPumpSauce" class="btn btn-primary" value="pumpSauce">Sốt</button>
+            
+            <h4 style="margin:10px,0px">Nguyên liệu khô 1</h4>
+            <input type="number" id="NLKhocapa1" placeholder="Time" style="margin:0px,10px; width:100px" />
+            <button id="btnNLKho1" class="btn btn-primary" >ON</button>
+            
+            <h4 style="margin:10px,0px">Nguyên liệu khô 2</h4>
+            <input type="number" id="NLKhocapa2" placeholder="Time" style="margin:0px,10px; width:100px" />
+            <button id="btnNLKho2" class="btn btn-primary">ON</button>
+
+            @* <h4 style="margin:10px,0px">Băng tải</h4>
+            <button id="btnBTNL" class="btn btn-primary">NGUYEN LIEU</button>
+            <button id="btnBTTP" class="btn btn-primary">THANH PHAM</button>
+
+            <h4 style="margin:10px,0px">Hộp cấp thành phẩm</h4>
+            <button id="btnBoxTP" class="btn btn-primary">Bật</button>
+            <h4 style="margin:10px,0px">XyLanh kéo khay TP</h4>
+            <button id="btnXLTP" class="btn btn-primary">Kéo ra</button>
+            <h4 style="margin:10px,0px">Nam châm hút khay</h4>
+            <button id="btnNamcham" class="btn btn-primary">ON</button> *@
+        </div>
+        <div class="col-md-4">
+            <h4 style="margin:10px,0px">Bật lửa</h4>
+            <input type="number" id="FireLevel" placeholder="Fire Level" style="margin:0px,10px; width:100px" />
+            <button style="margin:5px" id="btnFire" class="btn btn-primary">ON</button>
+
+            <h4 style="margin:10px,0px">Khò Gas</h4>
+            <input type="number" id="Firecapa" placeholder="Time" style="margin:0px,10px; width:100px" />
+            <button style="margin:5px" id="btnHeat" class="btn btn-primary" value="Heat">ON</button>
+
+            <h4 style="margin:10px,0px">Thay đổi góc nghiêng</h4>
+            <input type="number" id="angle" placeholder="Angle" style="margin:0px,10px; width: 100px" />
+            <button style="margin:5px" id="btnAngle" class="btn btn-primary">Run</button>
+        </div>
+    </div>
+</div>
+
+@*-----------------------Bep Xao------------------------*@
+@*thay doi goc nghieng bep*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnAngle").click(function () {
+
+            var val = $("#angle").val();
+
+            $.ajax({
+                url: '/Manual/ChangeAngle',
+                method: 'POST',
+                data: { value: val},
+            });
+        });
+    });
+</script>
+
+@*Bat lua bep*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false; // This is to keep track of the click state
+        $("#btnFire").click(function () {
+
+            var val = $("#FireLevel").val();
+
+            $.ajax({
+                url: '/Manual/FireLevel',
+                method: 'POST',
+                data: { value: val },
+            });
+        });
+    });
+</script>
+
+@*Kho gas bep*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false; // This is to keep track of the click state
+        $("#btnHeat").click(function () {
+
+            var val = $("#Firecapa").val();
+
+            $.ajax({
+                url: '/Manual/FireHeat',
+                method: 'POST',
+                data: { value: val },
+            });
+        });
+    });
+</script>
+
+@*Calib Bep*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnCalib").click(function () {
+
+            $.ajax({
+                url: '/Manual/Calib',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+@*Vi tri khay Nguyen lieu*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnVitri1").click(function () {
+
+            $.ajax({
+                url: '/Manual/Vitri1',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnVitri2").click(function () {
+
+            $.ajax({
+                url: '/Manual/Vitri2',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnVitri3").click(function () {
+
+            $.ajax({
+                url: '/Manual/Vitri3',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnVitri4").click(function () {
+
+            $.ajax({
+                url: '/Manual/Vitri4',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+@*Băng tải Nguyên liệu*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnGoiNL1").click(function () {
+
+            $.ajax({
+                url: '/Manual/GoiNL1',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnGoiNL2").click(function () {
+
+            $.ajax({
+                url: '/Manual/GoiNL2',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnGoiNL3").click(function () {
+
+            $.ajax({
+                url: '/Manual/GoiNL3',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnGoiNL4").click(function () {
+
+            $.ajax({
+                url: '/Manual/GoiNL4',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnGoiNL5").click(function () {
+
+            $.ajax({
+                url: '/Manual/GoiNL5',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnGoiNL6").click(function () {
+
+            $.ajax({
+                url: '/Manual/GoiNL6',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnTraNL").click(function () {
+
+            $.ajax({
+                url: '/Manual/TraNL',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+@*Băng tải Thành phẩm*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnGoiTPGN").click(function () {
+
+            $.ajax({
+                url: '/Manual/GoiTPGN',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnGoiTPGiay").click(function () {
+
+            $.ajax({
+                url: '/Manual/GoiTPGiay',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnTraTP").click(function () {
+
+            $.ajax({
+                url: '/Manual/TraTP',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+@*Co cau cap khay thanh pham*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false; // This is to keep track of the click state
+        $("#btnXLTP").click(function () {
+            if (this.textContent == "Kéo ra") {
+                this.textContent = "Đẩy vào";
+            }
+            else {
+                this.textContent = "Kéo ra";
+            }
+            $.ajax({
+                url: '/Manual/XLThPham',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            $(this).toggleClass('button-clicked');
+            clicked = !clicked; // Toggle the click state
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false; // This is to keep track of the click state
+        $("#btnNamcham").click(function () {
+            if (this.textContent == "ON") {
+                this.textContent = "OFF";
+            }
+            else {
+                this.textContent = "ON";
+            }
+            $.ajax({
+                url: '/Manual/NamChThPham',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            $(this).toggleClass('button-clicked');
+            clicked = !clicked; // Toggle the click state
+        });
+    });
+</script>
+
+@* Co cau cap khay nguyen lieu *@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnBoxSupply").click(function () {
+            $.ajax({
+                url: '/Manual/SupplyBox',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false; // This is to keep track of the click state
+        
+        $("#btnXylahNL").click(function () {
+            if (this.textContent == "Kéo ra") {
+                this.textContent = "Kéo vào";
+            }
+            else {
+                this.textContent = "Kéo ra";
+            }
+            $.ajax({
+                url: '/Manual/XylanhNL',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            $(this).toggleClass('button-clicked');
+            clicked = !clicked; // Toggle the click state
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false;
+        $("#btnTurnTrayLeft").click(function () {
+            if (this.textContent == "Trái") {
+                this.textContent = "Pause";
+            }
+            else {
+                this.textContent = "Trái";
+            }
+            $.ajax({
+                url: '/Manual/TurnTrayLeft',
+                method: 'POST',
+                data: {isSecondClick: clicked},
+            });
+            $(this).toggleClass('button-clicked');
+            clicked = !clicked; // Toggle the click state
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false;
+        $("#btnTurnTrayRight").click(function () {
+            if (this.textContent == "Phải") {
+                this.textContent = "Pause";
+            }
+            else {
+                this.textContent = "Phải";
+            }
+            $.ajax({
+                url: '/Manual/TurnTrayRight',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            $(this).toggleClass('button-clicked');
+            clicked = !clicked; // Toggle the click state
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnNod").click(function () {
+            $.ajax({
+                url: '/Manual/Nodded',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+
+@*Bang tai*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false;
+        $("#btnBTTP").click(function () {
+            if (this.textContent == "THANH PHAM") {
+                this.textContent = "Pause";
+            }
+            else {
+                this.textContent = "THANH PHAM";
+            }
+            $.ajax({
+                url: '/Manual/ConveyerTP',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            $(this).toggleClass('button-clicked');
+            clicked = !clicked; // Toggle the click state
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false;
+        $("#btnBTNL").click(function () {
+            if (this.textContent == "NGUYEN LIEU") {
+                this.textContent = "Pause";
+            }
+            else {
+                this.textContent = "NGUYEN LIEU";
+            }
+            $.ajax({
+                url: '/Manual/ConveyerNL',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            $(this).toggleClass('button-clicked');
+            clicked = !clicked; // Toggle the click state
+        });
+    });
+</script>
+
+@* Toc do quay bep
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSpeedup").click(function () {
+            $.ajax({
+                url: '/Manual/Speedup',
+                method: 'POST',
+            });
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSpeedown").click(function () {
+            $.ajax({
+                url: '/Manual/Speedown',
+                method: 'POST',
+            });
+        });
+    });
+</script> *@
+
+@* Bom thuc pham *@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnPumpOil").click(function () {
+
+            var val = $("#capa").val();
+            $.ajax({
+                url: '/Manual/PumpOil',
+                method: 'POST',
+                data: { value: val},
+            });
+
+            $("#capa").val() = 0;
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {    
+        var clicked = false;
+        $("#btnPumpWater").click(function () {
+            var val = $("#capa").val();
+            $.ajax({
+                url: '/Manual/PumpWater',
+                method: 'POST',
+                data: { value: val },
+            });
+
+            $("#capa").val() = 0;
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false;
+        $("#btnPumpSauce").click(function () {
+            var val = $("#capa").val();
+            $.ajax({
+                url: '/Manual/PumpSauce',
+                method: 'POST',
+                data: { value: val },
+            });
+
+            $("#capa").val() = 0;
+        });
+    });
+</script>
+
+@* Nguyen lieu kho *@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnNLKho1").click(function () {
+
+            var val = $("#NLKhocapa1").val();
+            $.ajax({
+                url: '/Manual/NLKho1',
+                method: 'POST',
+                data: { value: val },
+            });
+
+            $("#NLKhocapa1").val() = 0;
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnNLKho2").click(function () {
+
+            var val = $("#NLKhocapa2").val();
+            $.ajax({
+                url: '/Manual/NLKho2',
+                method: 'POST',
+                data: { value: val },
+            });
+
+            $("#NLKhocapa2").val() = 0;
+        });
+    });
+</script>
+
+@* Den bao*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false; // This is to keep track of the click state
+        $("#btnLedYellow").click(function () {
+            $.ajax({
+                url: '/Manual/YellowLed',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            clicked = !clicked; // Toggle the click state
+            $(this).toggleClass('btnYellow');
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false; // This is to keep track of the click state
+        $("#btnLedGreen").click(function () {
+            $.ajax({
+                url: '/Manual/LedGreen',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            clicked = !clicked; // Toggle the click state
+            $(this).toggleClass('btnGreen');
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false; // This is to keep track of the click state
+        $("#btnLedRed").click(function () {
+            $.ajax({
+                url: '/Manual/RedLed',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            clicked = !clicked; // Toggle the click state
+            $(this).toggleClass('button-clicked');
+        });
+    });
+</script>
+
+@*Bom xit rua*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false;
+        $("#btnSprayHC").click(function () {
+            if (this.textContent == "Hóa chất") {
+                this.textContent = "Pause";
+            }
+            else {
+                this.textContent = "Hóa chất";
+            }
+            $.ajax({
+                url: '/Manual/SprayHC',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            $(this).toggleClass('button-clicked');
+            clicked = !clicked; // Toggle the click state
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false;
+        $("#btnSprayWater").click(function () {
+            $.ajax({
+                url: '/Manual/SprayWater',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var clicked = false;
+        $("#btnAir").click(function () {
+            if (this.textContent == "Khí") {
+                this.textContent = "Pause";
+            }
+            else {
+                this.textContent = "Khí";
+            }
+            $.ajax({
+                url: '/Manual/Air',
+                method: 'POST',
+                data: { isSecondClick: clicked },
+            });
+            $(this).toggleClass('button-clicked');
+            clicked = !clicked; // Toggle the click state
+        });
+    });
+</script>

@@ -1,0 +1,114 @@
+﻿@model CookWeb_Ver2.Data.Recipes
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Recipes</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label class="form-check-label" asp-for="IsInvisible" style="font-size:large; font-weight:bold">
+                    Ẩn món trên menu
+                </label>
+                <input asp-for="IsInvisible" class="form-check-input" style="margin-left:50px; height:30px; width:30px"/>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberTrayBox" class="control-label"></label>
+                <input asp-for="NumberTrayBox" class="form-control" />
+                <span asp-validation-for="NumberTrayBox" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="TypeCookId" class="control-label"></label>
+                <select id="SelectedTypeCook" name="SelectedTypeCook" class="form-control" asp-for="TypeCookId">
+                    <option value="">-- Select Type Cook --</option>
+                    @{
+                        SelectList? lstTypeCook = ViewBag.lstTypeCook as SelectList;
+                        if(lstTypeCook != null)
+                        {
+                            foreach (var item in lstTypeCook)
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+                        }
+                    }
+                </select>
+
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="TypeDishId" class="control-label"></label>
+                <select id="SelectedTypeDish" name="SelectedTypeDish" class="form-control" asp-for="TypeDishId">
+                    <option value="">-- Select Type Dish --</option>
+                    @{
+                        SelectList? lstTypeDish = ViewBag.lstTypeDish as SelectList;
+                        if (lstTypeDish != null)
+                        {
+                            foreach (var item in lstTypeDish)
+                            {
+                                <option value="@item.Value">@item.Text</option>
+                            }
+                        }
+                    }
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="fileInput">Select an image to upload:</label>
+                        <input type="file" id="fileInput" name="fileInput" accept=".jpg,.jpeg,.png">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image-preview">
+                            @if (!string.IsNullOrEmpty(Model.ImagePath))
+                            {
+                                <img src="@Url.Content(Model.ImagePath)" />
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="Index"><input type="button" asp-action="Index" value="Back" class="btn btn-secondary" /></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#fileInput').change(function () {
+            var file = $(this)[0].files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var imagePreview = '<img src="' + e.target.result + '"></div>';
+                    $('.image-preview').html(imagePreview);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

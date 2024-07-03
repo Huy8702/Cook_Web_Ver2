@@ -1,0 +1,76 @@
+﻿@model CookWeb_Ver2.Data.Recipes
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Recipes</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col-10">
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="NumberTrayBox" class="control-label"></label>
+                        <input asp-for="NumberTrayBox" class="form-control" />
+                        <span asp-validation-for="NumberTrayBox" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TypeCookId" class="control-label"></label>
+                        @Html.DropDownList("SelectedTypeCook", ViewBag.lstTypeCook as SelectList, "-- Select Type Cook --", new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TypeDishId" class="control-label"></label>
+                        @Html.DropDownList("SelectedTypeDish", ViewBag.lstTypeDish as SelectList, "-- Select Type Dish --", new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <label for="fileInput">Select an image to upload:</label>
+                                <input type="file" id="fileInput" asp-for="ImagePath" name="fileInput" accept=".jpg,.jpeg,.png">
+                            </div>
+                            <div class="col">
+                                <div class="image-preview"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index"><input type="button" asp-action="Index" value="Back" class="btn btn-secondary" /></a>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#fileInput').change(function () {
+            var file = $(this)[0].files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    var imagePreview = '<img src="' + e.target.result + '">';
+                    $('.image-preview').html(imagePreview);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+</script>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookWeb_Ver2", "CookWeb_Ver2\CookWeb_Ver2.csproj", "{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{FD525DD0-70C7-45EB-8CAA-A32E31B0A338}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD525DD0-70C7-45EB-8CAA-A32E31B0A338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD525DD0-70C7-45EB-8CAA-A32E31B0A338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD525DD0-70C7-45EB-8CAA-A32E31B0A338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD525DD0-70C7-45EB-8CAA-A32E31B0A338}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E227903-C4EE-4E91-92CA-8AC3D2522C39}
+	EndGlobalSection
+EndGlobal

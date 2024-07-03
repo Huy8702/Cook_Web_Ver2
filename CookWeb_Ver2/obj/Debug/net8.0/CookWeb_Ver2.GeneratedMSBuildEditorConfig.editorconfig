@@ -1,0 +1,191 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CookWeb_Ver2
+build_property.RootNamespace = CookWeb_Ver2
+build_property.ProjectDir = C:\Users\FPT\OneDrive\Máy tính\CookApp2\.git\CookWeb_Ver2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\FPT\OneDrive\Máy tính\CookApp2\.git\CookWeb_Ver2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Machines/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Machines/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Machines/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Machines/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Machines/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Manual/ControlBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWFsXENvbnRyb2xCb2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Manual/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWFsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Monitors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaXRvcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Monitors/OrderCooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaXRvcnNcT3JkZXJDb29raW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Monitors/Sort.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uaXRvcnNcU29ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/OrderDetails/Accept.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEFjY2VwdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/OrderDetails/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/OrderDetails/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/OrderDetails/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/OrderDetails/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/OrderDetails/History.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/OrderDetails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJEZXRhaWxzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Recipes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Recipes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Recipes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Recipes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Recipes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjaXBlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Roles/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Roles/EditRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdFJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Roles/EditUserInRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdFVzZXJJblJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Roles/ListRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcTGlzdFJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/StepsMakeRecipes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RlcHNNYWtlUmVjaXBlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/StepsMakeRecipes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RlcHNNYWtlUmVjaXBlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/StepsMakeRecipes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RlcHNNYWtlUmVjaXBlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/StepsMakeRecipes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RlcHNNYWtlUmVjaXBlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/StepsMakeRecipes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RlcHNNYWtlUmVjaXBlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/StepsMakeRecipes/_StepsMakeRecipesPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RlcHNNYWtlUmVjaXBlc1xfU3RlcHNNYWtlUmVjaXBlc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Users/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Users/ListUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTGlzdFVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/FPT/OneDrive/Máy tính/CookApp2/.git/CookWeb_Ver2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-v11bjy3px7

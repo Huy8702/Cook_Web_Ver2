@@ -1,0 +1,220 @@
+﻿@model IEnumerable<CookWeb_Ver2.Data.Machine>
+
+@{
+	ViewData["Title"] = "Machines Management";
+}
+
+<h1>Machines Management</h1>
+
+<style>
+	.button-clicked {
+		background-color: red;
+	}
+
+	.button {
+		width: 50px;
+	}
+</style>
+
+<p>
+	<h5 class="@((ViewBag.isConnected) ? "success" : "error")">@ViewBag.Status</h5>
+</p>
+
+<div class="row">
+	<div class="col-auto">
+		<button id="updateConnect" class="btn btn-primary btn-block">Reconnect</button>
+	</div>
+	<div class="col-auto">
+		<button id="rstMachine" class="btn btn-primary btn-block">Reset "Bếp xào"</button>
+	</div>
+	@if (Program.Client != null && Program.Client.Connected == true)
+	{
+		<div class="col-auto">
+			<a asp-controller="Manual" asp-action="Index" class="btn btn-primary btn-block">Manual</a>
+		</div>
+	}
+</div>
+
+@using (Html.BeginForm("UpdateStatus", "Machines", FormMethod.Post))
+{
+	<div style="margin-top:20px">
+		<a class="btn btn-outline" id="checkAllButton" style="margin-right:10px;">Check All</a>
+		<button type="submit" class="btn btn-outline-primary" style="margin-left:10px;">Update Status</button>
+	</div>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>
+					Trạng thái
+				</th>
+				<th>
+					Tên bếp
+				</th>
+				<th>
+					Loại thành phẩm
+				</th>
+				<th>
+					Mã bếp
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				<tr>
+					@if (item.Activate)
+					{
+						<td><input type="checkbox" name="selectedIds" value="@item.Id" checked /></td>
+					}
+
+					else
+					{
+						<td><input type="checkbox" name="selectedIds" value="@item.Id" /></td>
+					}
+
+					<td>
+						@Html.DisplayFor(modelItem => item.Name)
+					</td>
+					<td>
+						@Html.DisplayFor(modelItem => item.Model)
+					</td>
+					<td>
+						<a asp-action="Edit" asp-route-id="@item.Id">
+							<i class="fa-solid fa-pen"></i>
+						</a> |
+
+						<a asp-action="Delete" asp-route-id="@item.Id">
+							<i class="fa-solid fa-trash"></i>
+						</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}
+<div class="row">
+	<div class="col-4">
+		<button id="btnStop1" class="btn btn-primary" style="margin:30px;">Stop Bep xao 1</button>
+	</div>
+	<div class="col-4">
+		<button id="btnStop2" class="btn btn-primary" style="margin:30px;">Stop Bep xao 2</button>
+	</div>
+	<div class="col-4">
+		<button id="btnStop3" class="btn btn-primary" style="margin:30px;">Stop Bep xao 3</button>
+	</div>
+</div>
+
+<script>
+	document.getElementById("checkAllButton").addEventListener("click", function () 
+	{
+		var checkboxes = document.getElementsByName("selectedIds");
+		var allChecked = true;
+
+		for (var i = 0; i < checkboxes.length; i++) 
+		{
+			if (!checkboxes[i].checked) {
+				allChecked = false;
+				break;
+			}
+		}
+
+		for (var i = 0; i < checkboxes.length; i++) 
+		{
+			checkboxes[i].checked = !allChecked;
+		}
+
+		var button = document.getElementById("checkAllButton");
+		button.textContent = allChecked ? "Check All" : "Uncheck All";
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$("#rstMachine").click(function () {
+			$.ajax({
+				url: '/Machines/ResetMachine',
+				method: 'POST',
+				success: function () {
+					// Reload the page on success
+					location.reload();
+				},
+			});
+		});
+	});
+
+	$(document).ready(function () {
+		$("#updateConnect").click(function () {
+			$.ajax({
+				url: '/Machines/ConnectAgain',
+				method: 'POST',
+				success: function () {
+					// Reload the page on success
+					location.reload();
+				},
+			});
+		});
+	});
+
+	//Xu ly nut nhan pause cook
+	$(document).ready(function () {
+		var clicked = false; // This is to keep track of the click state
+		$("#btnStop1").click(function () {
+			if (this.textContent == "Stop Bep xao 1") {
+				this.textContent = "Continue";
+			}
+			else {
+				this.textContent = "Stop Bep xao 1";
+			}
+
+			$.ajax({
+				url: '/Machines/PauseCook',
+				method: 'POST',
+				data: { isSecondClick: clicked },
+			});
+			$(this).toggleClass('button-clicked');
+			clicked = !clicked; // Toggle the click state
+		});
+	});
+
+	//Xu ly nut nhan pause cook
+	$(document).ready(function () {
+		var clicked = false; // This is to keep track of the click state
+		$("#btnStop2").click(function () {
+			if (this.textContent == "Stop Bep xao 2") {
+				this.textContent = "Continue";
+			}
+			else {
+				this.textContent = "Stop Bep xao 2";
+			}
+
+			$.ajax({
+				url: '/Machines/PauseCook2',
+				method: 'POST',
+				data: { isSecondClick: clicked },
+			});
+			$(this).toggleClass('button-clicked');
+			clicked = !clicked; // Toggle the click state
+		});
+	});
+
+	//Xu ly nut nhan pause cook
+	$(document).ready(function () {
+		var clicked = false; // This is to keep track of the click state
+		$("#btnStop3").click(function () {
+			if (this.textContent == "Stop Bep xao 3") {
+				this.textContent = "Continue";
+			}
+			else {
+				this.textContent = "Stop Bep xao 3";
+			}
+
+			$.ajax({
+				url: '/Machines/PauseCook3',
+				method: 'POST',
+				data: { isSecondClick: clicked },
+			});
+			$(this).toggleClass('button-clicked');
+			clicked = !clicked; // Toggle the click state
+		});
+	});
+</script>

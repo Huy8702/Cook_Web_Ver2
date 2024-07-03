@@ -1,0 +1,88 @@
+﻿@using CookWeb_Ver2.Data;
+@using System;
+@model CookWeb_Ver2.Data.OrderDetail
+
+@{
+    ViewData["Title"] = "Order Cooking Information";
+    int time = ViewBag.sumTime;
+}
+
+<h3>Order Cooking Information</h3>
+<h4 class="text-danger">@ViewBag.MessageCook</h4>
+@if (@Model.Recipes != null && @Model.Machine != null && Model.Recipes.StepsMakeRecipes != null)
+{
+    <div>
+        <div class="row">
+            <div class="col-md-3">
+                <label>Food Name: @Model.Recipes.Name</label> <br />
+                <label>Cooking Machine: @Model.Machine.Name</label>
+            </div>
+            <div class="col-md-3">
+                <img src="@Model.Recipes.ImagePath" style="max-height:50px;" />
+            </div>
+            <div id="countdown" class="col-md-3">
+                <span id="seconds">@ViewBag.sumTime</span> seconds left
+            </div>
+        </div>
+
+        @{
+            int k = Model.Recipes.StepsMakeRecipes.Count();
+        }
+        <ul class="progressbar">
+            @for (int i = 0; i < k + 2; i++)
+            {
+                if (i == 0)
+                {
+                    <li class="complete">Wait</li>
+                }
+                else if (i == 1)
+                {
+                    <li class="complete">Start</li>
+                }
+                else if (Model.Status != 1 && i <= Model.Status)
+                {
+                    <li class="complete">@Model.Recipes.StepsMakeRecipes.ElementAt(i - 2).StepName</li>
+                }
+                else if (Model.Status == k + 1)
+                {
+                    <li class="complete">End</li>
+                }
+                else if ((Model.Status + 1) == i && Model.Status != 1)
+                {
+                    <li class="active">@Model.Recipes.StepsMakeRecipes.ElementAt(i - 2).StepName</li>
+                }
+                else
+                {
+                    <li>@Model.Recipes.StepsMakeRecipes.ElementAt(i - 2).StepName</li>
+                }
+            }
+        </ul>
+    </div>
+
+}
+
+
+<script>
+
+    var startTime = @ViewBag.StartTime;
+    var currentTime = DateTime.Now;
+    var timeDifference = currentTime - startTime;
+    var remainingSeconds = @ViewBag.sumTime - timeDifference.TotalSeconds;
+
+    var countdownFunction = setInterval(function () {
+        remainingSeconds--;
+
+        document.getElementById("seconds").textContent = remainingSeconds;
+
+        if (remainingSeconds <= 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+<script>
+    setInterval(function () {
+        location.reload();
+    }, 5000);
+</script>

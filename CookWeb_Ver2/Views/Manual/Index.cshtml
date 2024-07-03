@@ -1,0 +1,15 @@
+﻿@model CookWeb_Ver2.Models.ManualViewModel
+@{
+    SelectList MachineList = ViewBag.MachineName;
+}
+
+<h1>Chế độ điều khiển bằng tay</h1>
+
+
+@using (Html.BeginForm("Connect", "Manual", FormMethod.Post))
+{
+    <label>Lựa chọn bếp</label>
+    @Html.DropDownListFor(model => model.MachineName, MachineList)
+    @Html.ValidationMessageFor(model => model.MachineName)
+    <button type="submit" class="btn btn-primary">Kết nối</button>
+}

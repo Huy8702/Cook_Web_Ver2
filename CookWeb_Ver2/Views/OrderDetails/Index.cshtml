@@ -1,0 +1,167 @@
+﻿@model IEnumerable<CookWeb_Ver2.Data.OrderDetail>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3 style="color:dodgerblue;">Xác nhận món</h3>
+<hr class="separator">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tên người đặt
+            </th>
+            <th>
+                Số order
+            </th>
+            <th>
+                Loại món
+            </th>
+            <th>
+                Trạng thái
+            </th>
+            <th>
+                Món ăn
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Where(p => p.Status == 100))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrdinalNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeFood)
+                </td>
+                <td>
+                    Chờ xác nhận
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Recipes.Name)
+                </td>
+                <td>
+                    <a asp-action="Confirm" asp-route-id="@item.Id">Confirm</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3 style="color:dodgerblue; margin-top:30px">Quản lý món chờ</h3>
+<hr class="separator">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tên người đặt
+            </th>
+            <th>
+                Số order
+            </th>
+            <th>
+                Loại món
+            </th>
+            <th>
+                Trạng thái
+            </th>
+            <th>
+                Món ăn
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Where(p => p.Status == 0).OrderBy(p => p.OrdinalNumber)) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrdinalNumber)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeFood)
+                </td>
+            <td>
+                Món đang chờ
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Recipes.Name)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<h3 style="color:dodgerblue; margin-top:30px">Quản lý món đang nấu</h3>
+<h6 style="color:red;">(Xóa món khi đã reset phần mềm)</h6>
+<hr class="separator">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tên người đặt
+            </th>
+            <th>
+                Số order
+            </th>
+            <th>
+                Loại món
+            </th>
+            <th>
+                Trạng thái
+            </th>
+            <th>
+                Món ăn
+            </th>
+            <th>
+                Máy nấu
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Where(p => p.Status > 0 && p.Status <99))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrdinalNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeFood)
+                </td>
+                <td>
+                    Món đang nấu
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Recipes.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Machine.Name)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    setInterval(function () {
+        location.reload();
+    }, 10000);
+</script>

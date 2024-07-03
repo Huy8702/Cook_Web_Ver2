@@ -1,0 +1,183 @@
+﻿@model IEnumerable<CookWeb_Ver2.Data.StepsMakeRecipes>
+
+<table class="table">
+    @if (Model.Where(p => p.Recipes != null && p.Recipes.TypeCookId == 2).FirstOrDefault() != null)
+    {
+        <thead>
+            <tr>
+                <th>
+                    STT
+                </th>
+                <th>
+                    Tên bước
+                </th>
+                <th>
+                    Mức lửa
+                </th>
+                <th>
+                    Tốc độ
+                </th>
+                <th>
+                    Góc
+                </th>
+                <th>
+                    Dung lượng
+                </th>
+                <th>
+                    Thời gian
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StepNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StepName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._FireLevel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._Speed)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._Angle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._Capacity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._Second)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">
+                            <i class="fa-solid fa-pen"></i>
+                        </a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    }
+    @if (Model.Where(p => p.Recipes != null && p.Recipes.TypeCookId == 1).FirstOrDefault() != null)
+    {
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.StepName)
+                </th>
+                <th>
+                    Thời gian nấu
+                </th>
+                <th>
+                    Thời gian chờ
+                </th>
+                <th>
+                    Thời gian khò
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StepName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._Second)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._Capacity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._FireLevel)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">
+                            <i class="fa-solid fa-pen"></i>
+                        </a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    }
+    @if (Model.Where(p => p.Recipes != null && p.Recipes.TypeCookId == 3).FirstOrDefault() != null)
+    {
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.StepName)
+                </th>
+                <th>
+                    Thời gian nấu
+                </th>
+                <th>
+                    Nhiệt độ
+                </th>
+                <th>
+                    Số khay
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StepName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._Second)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._FireLevel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item._Method)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">
+                            <i class="fa-solid fa-pen"></i>
+                        </a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    }
+</table>
+
+<label>Tổng thời gian: @ViewBag.sumTime giây</label>
+<button style="margin:20px" id="btnSum" class="btn btn-primary">Tổng</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSum").click(function () {
+            var val = @Model.First().RecipesId;
+            $.ajax({
+                url: '/StepsMakeRecipes/CountSum',
+                method: 'POST',
+                data: { value: val },
+                success: function () {
+                    // Reload the page on success
+                    location.reload();
+                },
+            });
+        });
+    });
+</script>
+

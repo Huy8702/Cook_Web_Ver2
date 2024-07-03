@@ -1,0 +1,273 @@
+﻿@using CookWeb_Ver2.Data;
+@model CookWeb_Ver2.Data.StepsMakeRecipes
+
+@{
+    ViewData["Title"] = "Create";
+    IEnumerable<CookWeb_Ver2.Data.StepsMakeRecipes> lstStepsMakeRecipes = ViewBag.lstStepsMakeRecipes;
+    Recipes recipe = ViewBag.Recipe;
+    List<int> fireLevel = new List<int> {0, 1, 2, 3, 4, 5};
+    List<int> speed = new List<int> { 0, 1, 2, 3, 4, 5 };
+}
+
+<head>
+    <!-- Other head elements -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<h3>Tạo công thức món</h3>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label asp-for="RecipesId" class="control-label"> Recipes name (no edit)</label>
+                <select asp-for="RecipesId" class="form-control" asp-items="ViewBag.RecipesId"></select>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                @* @if (recipe.TypeCookId == 1)
+                {
+                    <div class="col-6">
+                        <div class="form-group">
+                    <label asp-for="StepNumber" class="control-label"></label>
+                    <input asp-for="StepNumber" class="form-control" />
+                    <span asp-validation-for="StepNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                    <label asp-for="StepName" class="control-label"></label>
+                    @Html.DropDownList("SelectedStep", ViewBag.lstStepName as SelectList, "-- Select Step --", new { @class = "form-control" })
+                    </div>
+                        <div class="form-group">
+                            <label asp-for="_Second" class="control-label">Thời gian nấu (lửa dưới)</label>
+                            <input asp-for="_Second" class="form-control" />
+                            <span asp-validation-for="_Second" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label asp-for="_Capacity" class="control-label">Thời gian chờ (từ đầu đến khi bật khò)</label>
+                            <input asp-for="_Capacity" class="form-control" />
+                            <span asp-validation-for="_Capacity" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="_FireLevel" class="control-label">Thời gian khò (lửa khò)</label>
+                            <input asp-for="_FireLevel" class="form-control" />
+                            <span asp-validation-for="_FireLevel" class="text-danger"></span>
+                        </div>
+                    </div>
+                } *@
+                @if (recipe.TypeCookId == 2)
+                {
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label asp-for="StepNumber" class="control-label">Số thứ tự</label>
+                            <input asp-for="StepNumber" class="form-control" />
+                            <span asp-validation-for="StepNumber" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="StepName" class="control-label">Tên bước</label>
+                            @Html.DropDownList("SelectedStep", ViewBag.lstStepName as SelectList, "-- Select Step --", new { @class = "form-control", id = "stepSelect" })
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="_FireLevel" class="control-label">Mức lửa</label>
+
+                            <select id="fire" name="selectedFire" class="form-control" asp-for="_FireLevel">
+                                @foreach (var level in fireLevel)
+                                {
+                                    <option>@level</option>
+                                }
+                            </select>
+
+                            <span asp-validation-for="_FireLevel" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="_Speed" class="control-label">Tốc độ</label>
+
+                            <select id="speed" name="selectedSpeed" class="form-control" asp-for="_Speed">
+                                @foreach (var level in speed)
+                                {
+                                    <option>@level</option>
+                                }
+                            </select>
+
+                            <span asp-validation-for="_Speed" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label asp-for="_Second" class="control-label">Thời gian (giây)</label>
+                            <input id="timeCook" asp-for="_Second" class="form-control" />
+                            <span asp-validation-for="_Second" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="_Angle" class="control-label">Góc nghiêng (độ)</label>
+                            <input id="angle" asp-for="_Angle" class="form-control" />
+                            <span asp-validation-for="_Angle" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="_Capacity" class="control-label">Dung lượng (ml)</label>
+                            <input id="capacity" asp-for="_Capacity" class="form-control" />
+                            <span asp-validation-for="_Capacity" class="text-danger"></span>
+                        </div>
+                    </div>
+                }
+                @*@if (recipe.TypeCookId == 3)
+                {
+                    <div class="col-6">
+                         <div class="form-group">
+                    <label asp-for="StepNumber" class="control-label">Step number</label>
+                    <input asp-for="StepNumber" class="form-control" />
+                    <span asp-validation-for="StepNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                    <label asp-for="StepName" class="control-label">Step name</label>
+                    @Html.DropDownList("SelectedStep", ViewBag.lstStepName as SelectList, "-- Select Step --", new { @class = "form-control" })
+                    </div>
+                        <div class="form-group">
+                            <label asp-for="_Second" class="control-label">Thời gian (sec)</label>
+                            <input asp-for="_Second" class="form-control" />
+                            <span asp-validation-for="_Second" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="_FireLevel" class="control-label">Nhiệt độ (C)</label>
+                            <input asp-for="_FireLevel" class="form-control" />
+                            <span asp-validation-for="_FireLevel" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="_Method" class="control-label">Số khay</label>
+                            @Html.DropDownList("SelectedMethod", ViewBag.lstMethod as SelectList, "--Chọn sô khay--", new { @class = "form-control"})
+                        </div>
+                    </div>
+                } *@
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                        <a asp-action="Index" asp-controller="Recipes"><input type="button" asp-action="Index" value="Back" class="btn btn-secondary" /></a>
+                    </div>
+                    @if (recipe.TypeCookId == 2)
+                    {
+                        <button id="btnFinal" class="btn btn-primary">Do thanh pham</button>
+                        <button id="btnFirst" class="btn btn-primary">Them dau, lam nong</button>
+                    }
+                </div>
+            </div>
+        </form>
+        
+        
+    </div>
+    @if (lstStepsMakeRecipes.Count() > 0)
+    {
+        <div class="col-md-8">
+            @await Html.PartialAsync("_StepsMakeRecipesPartial",lstStepsMakeRecipes)
+        </div>
+    }
+</div>
+
+@if (lstStepsMakeRecipes.Count() != 0)
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnFinal").click(function () {
+                var val = @lstStepsMakeRecipes.First().RecipesId;
+                $.ajax({
+                    url: '/StepsMakeRecipes/FinalStep',
+                    method: 'POST',
+                    data: { value: val },
+                    success: function () {
+                        // Reload the page on success
+                        location.reload();
+                    },
+                });
+            });
+        });
+    </script>
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnFirst").click(function () {
+            var val = @recipe.Id;
+            $.ajax({
+                url: '/StepsMakeRecipes/FirstStep',
+                method: 'POST',
+                data: { value: val },
+                success: function () {
+                    // Reload the page on success
+                    location.reload();
+                },
+            });
+        });
+    });
+</script>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $('#stepSelect').change(function () {
+                var _selectedStep = $(this).val();
+
+                if (_selectedStep == 22 || _selectedStep == 25 || _selectedStep == 28 || _selectedStep == 31) {
+                    $('#timeCook').val(22);
+                    $('#fire').val(0);
+                    $('#angle').val(100);
+                    $('#capacity').val(0);
+                    $('#speed').val(2);
+                }
+
+                if (_selectedStep == 4 || _selectedStep == 7 || _selectedStep == 10) {
+                    $('#fire').val(0);
+                    $('#angle').val(100);
+                    $('#speed').val(2);
+                }
+
+                if (_selectedStep == 13) {
+                    $('#capacity').val(0);
+                    $('#speed').val(5);
+                    $('#angle').val(25);
+                    $('#fire').val(5);
+                }
+
+                if (_selectedStep == 16) {
+                    $('#fire').val(5);
+                    $('#angle').val(35);
+                    $('#speed').val(2);
+                }
+
+                if (_selectedStep == 49 || _selectedStep == 52) {
+                    $('#fire').val(0);
+                    $('#angle').val(80);
+                    $('#speed').val(2);
+                }
+            });
+
+            //tự động hiện timecook khi điền capacity.
+            //mối quan hệ giữa lượng nước(y) và thời gian bơm(x) là: y = 12x - 30
+            $('#capacity').on('input', function () {
+                var _selectedStep = $('#stepSelect').val();
+                var inputValue = $(this).val();
+                if (_selectedStep == 7 || _selectedStep == 10) {
+                    var value = parseInt((parseInt(inputValue) + 10) / 50 + 8);
+                    $('#timeCook').val(value);
+                }
+
+                if (_selectedStep == 4) {
+                    var value = parseInt(inputValue / 5 + 5);
+                    $('#timeCook').val(value);
+                }
+                if (_selectedStep == 49) {
+                    var value = parseInt(parseInt(inputValue) + 6);
+                    $('#timeCook').val(value);
+                }
+            });
+        });    
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

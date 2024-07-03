@@ -1,0 +1,90 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> signInManager
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CookWeb_Ver2</title>
+    
+    <link rel="stylesheet" href="~/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> 
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="menu menu-1">
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li><a asp-controller="Recipes" asp-action="Index">Recipes</a></li>
+            <li><a asp-controller="Machines" asp-action="Index">Machines</a></li>
+            <li><a asp-controller="Monitors" asp-action="Index">Monitors</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                href="#" >Quản lý Order</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" style="display: flex; flex-direction: column; align-items: center; color: black; font-size:18px" href="/OrderDetails/Index">Xác nhận/Xóa</a>
+                    <a class="dropdown-item" style="display: flex; flex-direction: column; align-items: center;color: black; font-size:18px" href="/OrderDetails/History">Lịch sử</a>
+                </div>
+            </li>
+        </ul>
+
+        @if (signInManager.IsSignedIn(User) && User.Identity != null)
+        {
+            <form method="post" asp-action="logout" asp-controller="account" style="float:right; align-content:center">
+                <button type="submit" class="nav-link btn btn-link"
+                        style="align-content:center; color:white; font-weight:bold" name="Role" value="@User.Identity.Name">
+                    Logout, @User.Identity.Name
+                </button>
+            </form>
+            <ul style="float:right;">
+                <a style="font-weight:bold; color:white" asp-area="" asp-controller="Account" asp-action="Register">Đăng kí</a>
+            </ul>
+
+            @*
+        <form asp-action="Register" asp-controller="account" style="float:right; align-content:center">
+        <button type="submit" class="nav-link btn btn-link"
+        style="align-content:center; color:white; font-weight:bold" name="Role" >
+        Đăng kí
+        </button>
+        </form>
+            *@
+            
+        }
+        else
+        {
+            <ul style="float:right;">
+                <a style="font-weight:bold" asp-area="" asp-controller="Account" asp-action="Login">Đăng nhập</a>
+            </ul>
+        }
+    </nav>  
+
+    <div class="container" style="margin-top:5px">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @* <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - CookWeb_Ver2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <!-- Bootstrap JavaScript (choose one of the following) -->
+    <!-- Option 1: Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Option 2: Bootstrap Bundle (includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿@using CookWeb_Ver2.Data;
+@{
+    ViewData["Title"] = "Index";
+    List<Machine> lstMachines = ViewBag.lstActivateMachine;
+    List<OrderDetail> lstOrders_Xao = ViewBag.lstActivateOrder;
+    List<OrderDetail> lstOrders_Chien = ViewBag.lstActivateOrder_Chien;
+    List<OrderDetail> lstOrders_ChaoGang = ViewBag.lstActivateOrder_ChaoGang;
+    List<OrderDetail> lstCookeds = ViewBag.lstCookeds;
+    OrderDetail next_order = ViewBag.nextOrder;
+    OrderDetail next_order_chien = ViewBag.nextOrderChien;
+    OrderDetail next_order_chaoGang = ViewBag.nextOrderChaoGang;
+}
+<style>
+    .lstActivate {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+        .lstActivate li {
+            margin: 10px 10px 10px 0;
+            padding: 1px;
+            float: left;
+            width: 110px;
+            height: 100px;
+            font-size: 1em;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+    .clicked {
+        transform: scale(3);
+    }
+</style>
+
+<div class="row image-container">
+
+    <div class="col-md-6">
+        <h3 style="color:dodgerblue">Món đang nấu</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Bếp xào</h3>
+                <hr class="separator">
+                <ul class="lstActivate">
+                    @foreach (var item in lstOrders_Xao)
+                    {
+                        <a style="color:black;" href="OrderCooking?orderId=@item.Id">
+                            @if (item.Status > 0 && item.Status < 99)
+                            {
+                            <li class="item-activate">
+                                <div style="font-size:4px;font-weight:bold;">
+                                    <img src="@Html.DisplayFor(modelItem => item.Recipes.ImagePath)" style="height:75px;width:75px" />
+                                    <h6 style="color:white;font-weight:bold;margin:0;font-size:x-small">@item.Machine.Name</h6>
+                                    <h5 style="font-weight:bold;font-size:8px; color:white;text-align:center;margin:0;">
+                                            @Html.DisplayFor(modelItem => item.Recipes.Name)
+                                    </h5>
+                                </div>                               
+                            </li>
+                            }
+                            else if (item == ViewBag.nextOrder)
+                            {
+                            <li>
+                                <div style="font-size:9px;font-weight:bold;">
+                                    <img src="@Html.DisplayFor(modelItem => item.Recipes.ImagePath)" style="height:60px;width:60px" />
+                                    <h6 style="color:orangered;text-align:center;margin:0;font-size:small;font-weight:bold">Next</h6>
+                                    <h6 style="font-weight:bold;font-size:11px;color:black;text-align:center;margin:0">
+                                            @Html.DisplayFor(modelItem => item.Recipes.Name)
+                                    </h6>
+                                </div>
+                            </li>
+                            }
+                            else
+                            {
+                            <li>
+                                <div style="font-size:10px;font-weight:bold;">
+                                    <img src="@Html.DisplayFor(modelItem => item.Recipes.ImagePath)" style="height:60px;width:60px" />
+                                    <h6 style="color:orangered;text-align:center;margin:0;font-size:small;font-weight:bold">@item.OrdinalNumber</h6>
+                                    <h5 style="font-weight:bold;font-size:10px; color:black;text-align:center;margin:0;">
+                                            @Html.DisplayFor(modelItem => item.Recipes.Name)
+                                    </h5>
+                                </div>
+                            </li>
+                            }
+                        </a>
+                    }
+                </ul>
+            </div>
+            
+        </div>         
+    </div>
+    <div class="col-md-6">
+        
+        <h1>Freshly cooked dish</h1>
+        @foreach (var item in lstCookeds)
+        {
+            <img class="cooked" src="@item.Recipes.ImagePath" style="max-width:25%;max-height:50%;padding:10px;transition: transform .2s;" />
+            @*<h5>@item.Recipes.Name</h5>*@
+        }
+    </div>
+</div>
+
+<script>
+    // Lấy danh sách các thẻ li
+    const listItems = document.querySelectorAll('.item-activate');
+
+    // Thiết lập animation cho tất cả các thẻ li có class là 'activate'
+    for (let i = 0; i < listItems.length; i++) {
+        listItems[i].style.animation = 'glowing 1500ms infinite';
+    }
+
+    setInterval(function () {
+        location.reload();
+    }, 5000); // Tự động làm mới trang mỗi 10 giây (10.000 milliseconds)
+
+    // Lấy danh sách các hình ảnh
+    const imageContainer = document.querySelector('.image-container');
+    const images = document.querySelectorAll('.cooked');
+
+    // Thêm sự kiện click cho mỗi hình ảnh
+    images.forEach(image => {
+        image.addEventListener('click', function () {
+            // Xóa lớp 'clicked' cho tất cả các hình ảnh
+            images.forEach(image => {
+                image.classList.remove('clicked');
+            });
+            // Thêm lớp 'clicked' cho hình ảnh được click
+            this.classList.add('clicked');
+        });
+    });
+
+    // Khi click ra ngoài vùng ảnh, bỏ class "active" để trở về kích thước ban đầu
+    imageContainer.addEventListener('click', function (event) {
+        if (event.target !== images) {
+            images.classList.remove('clicked');
+        }
+    });
+
+</script>

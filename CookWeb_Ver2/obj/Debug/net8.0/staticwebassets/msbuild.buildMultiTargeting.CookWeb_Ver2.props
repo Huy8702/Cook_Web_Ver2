@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CookWeb_Ver2.props" />
+</Project>

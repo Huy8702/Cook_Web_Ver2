@@ -1,0 +1,112 @@
+﻿@model IEnumerable<CookWeb_Ver2.Data.OrderDetail>
+
+@{
+    ViewData["Title"] = "History";
+}
+<style>
+    .search-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .search-form .form-group {
+            flex: 1;
+            margin-right: 10px; /* Khoảng cách giữa các trường */
+        }
+
+            .search-form .form-group:last-child {
+                margin-right: 0; /* Xóa khoảng cách bên phải của trường cuối cùng */
+            }
+
+    .submit-button-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: top;
+    }
+
+        .submit-button-container button {
+            width: 80%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của container */
+            max-width: 200px; /* Giới hạn chiều rộng tối đa của nút */
+        }
+
+
+</style>
+
+<h3 style="color:dodgerblue;">Món được nấu</h3>
+
+<form method="get" action="@Url.Action("History", "OrderDetails")" class="search-form">
+    <div class="form-group">
+        <label for="searchName">Tên món:</label>
+        <input type="text" id="searchName" name="searchName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="searchUser">Tên người đặt:</label>
+        <input type="text" id="searchUser" name="searchUser" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="searchMachine">Tên bếp:</label>
+        <select id="searchMachine" name="searchMachine" class="form-control">
+            <option value="">-- Chọn bếp --</option>
+            <option value="Bep xao 1">Bếp 1</option>
+            <option value="Bep xao 2">Bếp 2</option>
+            <option value="Bep xao 3">Bếp 3</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="searchTime">Thời gian kết thúc:</label>
+        <input type="datetime-local" id="searchFinishTime" name="searchFinishTime" class="form-control" />
+    </div>
+    <div class="form-group submit-button-container">
+        <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    </div>
+</form>
+
+
+<hr class="separator">
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Tên người đặt
+            </th>
+            <th>
+                Trạng thái
+            </th>
+            <th>
+                Món ăn
+            </th>
+            <th>
+                Máy nấu
+            </th>
+            <th>
+                Thời gian kết thúc
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Where(p => p.Status == 99))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Code)
+                </td>
+                <td>
+                    Đã nấu xong
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Recipes.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Machine.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FinishTime)
+                </td>
+                <td>
+                    <a asp-action="DeleteInHis" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

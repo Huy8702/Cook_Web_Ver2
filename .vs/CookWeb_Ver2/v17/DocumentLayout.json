@@ -1,0 +1,715 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\manual\\controlboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\manual\\controlboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\manual\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\manual\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\controllers\\manualcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\controllers\\manualcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\stepsmakerecipes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\stepsmakerecipes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\recipesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\recipesdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\recipes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\recipes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\iotmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\iotmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\controllers\\orderdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\orderdetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\orderdetails\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\orderdetails\\accept.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\orderdetails\\accept.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\ultilities\\setframedatatobesent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\ultilities\\setframedatatobesent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\recipes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\recipes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\recipes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\recipes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\machines\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\machines\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\recipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\models\\typedishidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\models\\typedishidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\models\\typecookidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\models\\typecookidmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\recipes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\recipes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\rolessystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\rolessystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\controllers\\stepsmakerecipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\controllers\\stepsmakerecipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\orderdetails\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\orderdetails\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\controllers\\monitorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\controllers\\monitorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\stepsmakerecipes\\_stepsmakerecipespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\stepsmakerecipes\\_stepsmakerecipespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\data\\rolepermissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\data\\rolepermissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\stepsmakerecipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\stepsmakerecipes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\stepsmakerecipes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\stepsmakerecipes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|c:\\users\\fpt\\onedrive\\m\u00E1y t\u00EDnh\\cookapp2\\.git\\cookweb_ver2\\views\\machines\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3A7738F9-9BAA-47D5-BB18-E5C11AEB9D64}|CookWeb_Ver2\\CookWeb_Ver2.csproj|solutionrelative:cookweb_ver2\\views\\machines\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\OrderDetail.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\OrderDetail.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T04:39:16.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ControlBoard.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Manual\\ControlBoard.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Manual\\ControlBoard.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Manual\\ControlBoard.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Manual\\ControlBoard.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAABQCAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-23T08:31:00.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T06:21:46.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAuwC0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:42:21.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Models\\RegisterViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T06:35:05.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\User.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\User.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\User.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T06:01:54.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBUAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T06:25:13.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T06:15:37.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\Order.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\Order.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\Order.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T04:39:49.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Program.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Program.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Program.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Program.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwB8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T03:59:57.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SetFrameDataTobeSent.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Ultilities\\SetFrameDataTobeSent.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Ultilities\\SetFrameDataTobeSent.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Ultilities\\SetFrameDataTobeSent.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Ultilities\\SetFrameDataTobeSent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T05:12:23.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-23T05:43:48.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T05:44:15.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StepsMakeRecipes.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\StepsMakeRecipes.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\StepsMakeRecipes.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\StepsMakeRecipes.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\StepsMakeRecipes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T10:37:17.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Manual\\Index.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Manual\\Index.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Manual\\Index.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Manual\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-24T15:16:17.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RecipesDetail.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\RecipesDetail.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\RecipesDetail.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\RecipesDetail.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\RecipesDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T10:37:02.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ManualController.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\ManualController.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Controllers\\ManualController.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\ManualController.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Controllers\\ManualController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAA1wCsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T08:31:56.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Ingredient.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\Ingredient.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\Ingredient.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\Ingredient.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\Ingredient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T10:37:11.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IoTManager.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\IoTManager.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\IoTManager.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\IoTManager.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\IoTManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALsAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:50:53.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Recipes.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\Recipes.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\Recipes.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\Recipes.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\Recipes.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:37:01.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\OrderDetails\\Index.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\OrderDetails\\Index.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\OrderDetails\\Index.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\OrderDetails\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T06:17:26.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderDetailsController.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\OrderDetailsController.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Controllers\\OrderDetailsController.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\OrderDetailsController.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Controllers\\OrderDetailsController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAqwFkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T08:05:03.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RecipesController.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\RecipesController.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Controllers\\RecipesController.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\RecipesController.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Controllers\\RecipesController.cs",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAswKgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T15:48:16.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Accept.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\OrderDetails\\Accept.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\OrderDetails\\Accept.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\OrderDetails\\Accept.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\OrderDetails\\Accept.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-23T05:17:34.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Recipes\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Recipes\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Recipes\\Delete.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Recipes\\Delete.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-23T03:34:08.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TypeDishIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Models\\TypeDishIdModel.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Models\\TypeDishIdModel.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Models\\TypeDishIdModel.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Models\\TypeDishIdModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T03:50:16.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Recipes\\Index.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Recipes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Recipes\\Index.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Recipes\\Index.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-23T03:56:18.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Recipes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Recipes\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Recipes\\Edit.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Recipes\\Edit.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAiwD8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-23T04:23:55.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Recipes\\Create.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Recipes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Recipes\\Create.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Recipes\\Create.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB4AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T06:21:48.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Machines\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Machines\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Machines\\Edit.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Machines\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-23T04:26:09.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TypeCookIdModel.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Models\\TypeCookIdModel.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Models\\TypeCookIdModel.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Models\\TypeCookIdModel.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Models\\TypeCookIdModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T03:50:20.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RolesSystem.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\RolesSystem.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\RolesSystem.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\RolesSystem.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\RolesSystem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T06:02:53.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\Role.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\Role.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\Role.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T06:03:24.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "StepsMakeRecipesController.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\StepsMakeRecipesController.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Controllers\\StepsMakeRecipesController.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\StepsMakeRecipesController.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Controllers\\StepsMakeRecipesController.cs",
+              "ViewState": "AQIAAPYBAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T10:25:54.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_StepsMakeRecipesPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\StepsMakeRecipes\\_StepsMakeRecipesPartial.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\StepsMakeRecipes\\_StepsMakeRecipesPartial.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\StepsMakeRecipes\\_StepsMakeRecipesPartial.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\StepsMakeRecipes\\_StepsMakeRecipesPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T09:47:57.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "CookWeb_Ver2\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAK0BAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-12T13:40:55.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MonitorsController.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\MonitorsController.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Controllers\\MonitorsController.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Controllers\\MonitorsController.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Controllers\\MonitorsController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T08:04:27.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T06:34:22.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RolePermissions.cs",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\RolePermissions.cs",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Data\\RolePermissions.cs",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Data\\RolePermissions.cs",
+              "RelativeToolTip": "CookWeb_Ver2\\Data\\RolePermissions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T06:03:19.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\StepsMakeRecipes\\Create.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\StepsMakeRecipes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\StepsMakeRecipes\\Create.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\StepsMakeRecipes\\Create.cshtml",
+              "ViewState": "AQIAAJcAAAAAAAAAAADgv/sAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T10:26:46.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\StepsMakeRecipes\\Index.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\StepsMakeRecipes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\StepsMakeRecipes\\Index.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\StepsMakeRecipes\\Index.cshtml",
+              "ViewState": "AQIAACYAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-11T10:26:18.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Machines\\Create.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\Machines\\Create.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\Machines\\Create.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\Machines\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T06:22:29.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\OrderDetails\\History.cshtml",
+              "RelativeDocumentMoniker": "CookWeb_Ver2\\Views\\OrderDetails\\History.cshtml",
+              "ToolTip": "C:\\Users\\FPT\\OneDrive\\M\u00E1y t\u00EDnh\\CookApp2\\.git\\CookWeb_Ver2\\Views\\OrderDetails\\History.cshtml",
+              "RelativeToolTip": "CookWeb_Ver2\\Views\\OrderDetails\\History.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAIBJwFkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T06:16:29.075Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
